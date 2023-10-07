@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.png" />
+    <title>Add your songs</title>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: "punk";
+        src: url(MAYHEM-Regular.otf);
+      }
+      h1 {
+        font-family: punk;
+        color: white;
+      }
+
+      span {
+        color: red;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        border: 0;
+      }
+
+      body {
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        place-items: center;
+        background-color: #181818;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 24rem;
+        gap: 1rem;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 1.4rem;
+        background: white;
+        border: 1px solid black;
+      }
+
+      textarea {
+        height: 6rem;
+      }
+
+      button {
+        width: 8rem;
+        padding: 1.4rem;
+        cursor: pointer;
+        background: red;
+        color: white;
+      }
+    </style>
+    <div class="container">
+      <h1>A d d <span>s o n g s </span></h1>
+      <form
+        action="https://formsubmit.co/fabiyanunggul@gmail.com"
+        method="POST"
+      >
+        <input type="text" name="Name" placeholder="Your name" required />
+        <input type="email" name="Email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
